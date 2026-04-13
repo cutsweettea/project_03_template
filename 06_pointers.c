@@ -1,5 +1,18 @@
 #include <stdio.h>
 
+void PointerCheck(int* p1, int* p2) {
+  if(p1 == p2) {
+    printf("Same address!\n");
+  }
+  
+  if(*p1 == *p2) {
+    printf("Same value!\n");
+  }
+
+  *p1 = 0;
+  *p2 = 0;
+}
+
 int main(){
   int same_pointer;
   int val_a;
