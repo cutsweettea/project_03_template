@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int CalculateDamage(int attack_damage, int num_attacks, int shield){
+  return (attack_damage * num_attacks) - (shield * num_attacks);
 }
 
 int main(){
